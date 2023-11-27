@@ -3,12 +3,13 @@ import Wrapper from "../assets/wrappers/LandingPage";
 import main from "../assets/images/main.svg";
 import logo from "../assets/images/logo.svg";
 import { Link } from "react-router-dom";
+import { Logo } from "../components";
 
 const Landing = () => {
   return (
     <Wrapper>
       <nav>
-        <img src={logo} alt="jobstack" className="logo" />
+        <Logo></Logo>
       </nav>
       <div className="container page">
         <div className="info">
@@ -19,8 +20,7 @@ const Landing = () => {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat,
             consectetur pariatur perferendis tenetur dicta repudiandae omnis
             nihil odio quaerat, ab vel laborum esse iusto beatae cupiditate
-            ipsum eos recusandae necessitatibus! Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Aspernatur, cum.
+            ipsum eos recusandae necessitatibus.
           </p>
           <Link to="/register" className="btn register-link">
             Register
